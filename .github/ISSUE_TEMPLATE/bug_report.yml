@@ -1,0 +1,73 @@
+name: Bug report
+description: Report a problem with MathAgora.
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        **Privacy warning:** Issues are public. Do not include passwords, access tokens,
+        personal information, or confidential/unpublished research.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Short bug summary
+      description: What went wrong?
+      placeholder: A concise description of the problem
+    validations:
+      required: true
+      maxLength: 160
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the actions that make the problem happen.
+      placeholder: |
+        1. Go to …
+        2. Select …
+        3. See the problem
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What happened instead?
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and operating system
+      description: For example, Firefox on Windows 11.
+      placeholder: Browser and version; operating system
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Is the problem reproducible?
+      options:
+        - Yes, every time
+        - Sometimes
+        - No, it happened once
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Attach an image if useful. Check it contains no private information or unpublished research.
+      render: text
+    validations:
+      required: false

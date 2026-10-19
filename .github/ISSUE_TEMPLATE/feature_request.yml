@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest an improvement to MathAgora.
+title: "[Feature]: "
+labels:
+  - feature-request
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        **Privacy warning:** Issues are public. Do not include passwords, access tokens,
+        personal information, or confidential/unpublished research.
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Proposed improvement
+      description: What would you like MathAgora to do?
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it solves
+      description: What is difficult or missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected benefit
+      description: How would this help users?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Add examples or context that help explain the idea. Do not include private information or unpublished research.
+    validations:
+      required: false
